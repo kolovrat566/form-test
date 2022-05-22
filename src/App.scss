@@ -1,0 +1,42 @@
+.app {
+  padding: 40px;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+
+    .deleteUserBtn {
+      background-color: rgb(154, 1, 1);
+      color: white;
+    } 
+
+    .addUserBtn {
+      background-color: green;
+      color: white;
+    } 
+
+    span {
+      font-size: 23px;
+      color: red;
+    }
+  }
+
+  .inputsContainer {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    
+    @media only screen and (max-width : 851px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+button {
+  height: 30px;
+  background-color: white;
+  border: 1px solid rgb(173, 171, 171);
+  border-radius: 5px;
+  margin: 5px;
+}
+
